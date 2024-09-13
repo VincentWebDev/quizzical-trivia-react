@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 600px;
+  width: 600px;
+
+  background-color: var(--bg);
+  background-image: url(./assets/blue-blob.svg), url(./assets/yellow-blob.svg);
+  background-position: left bottom, right top;
+  background-repeat: no-repeat, no-repeat;
+
+  margin: 5vh auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: Karla, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 2.5rem;
+  color: var(--blue);
+  text-align: center;
+}
+
+button {
+  height: 52px;
+  width: 193px;
+  border: none;
+  background-color: var(--blue);
+  border-radius: 5px;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: white;
+}
