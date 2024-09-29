@@ -107,6 +107,11 @@ button {
     height: 100%;
   }
 
+  button {
+    height: 65px;
+    font-size: 1.25rem;
+  }
+
   .questions-container {
     padding: 15px;
   }
