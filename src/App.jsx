@@ -1,12 +1,12 @@
 import { useState, useRef } from "react";
 import Questions from "./components/Questions";
-import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
   const [buttonMessage, setButtonMessage] = useState("Start Quiz");
   const quizStatus = useRef("home");
 
+  // handles the button text and state of the quiz
   function handleClick() {
     switch (quizStatus.current) {
       case "home":
@@ -46,7 +46,8 @@ function App() {
           buttonMessage={buttonMessage}
         />
       )) || <>{quizStatus.current === "home" && <h1>Quizzical</h1>}</>}
-      <button type="button" onClick={handleClick}>
+
+      <button type="button" aria-label={buttonMessage} onClick={handleClick}>
         {buttonMessage}
       </button>
     </main>
