@@ -23,7 +23,6 @@ export default function Questions(props) {
 
   async function getQuestions() {
     let count = 0;
-    console.log("getQuestions ran " + ++count);
     try {
       const response = await fetch(
         "https://opentdb.com/api.php?amount=5&type=multiple"

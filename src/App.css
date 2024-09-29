@@ -103,6 +103,10 @@ button {
     padding: 15px 0;
   }
 
+  body {
+    height: 100%;
+  }
+
   .questions-container {
     padding: 15px;
   }
@@ -110,5 +114,9 @@ button {
   .possible_answers ul {
     flex-direction: column;
     row-gap: 7px;
+  }
+
+  .score {
+    margin: 10px 0;
   }
 }
